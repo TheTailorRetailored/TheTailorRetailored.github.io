@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en-AU">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lachlan Bridges — Software developer &amp; applied mathematician</title>
+    <meta name="description" content="Lachlan Bridges is a software developer and applied mathematician in Adelaide, building tools for research, data, automation and self-hosted systems.">
+    <meta name="author" content="Lachlan Bridges">
+    <meta name="theme-color" content="#173f37">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Lachlan Bridges — Software developer &amp; applied mathematician">
+    <meta property="og:description" content="Selected work in research tooling, knowledge graphs, data recovery and self-hosted systems.">
+    <meta property="og:url" content="https://thetailorretailored.github.io/">
+    <meta property="og:image" content="https://thetailorretailored.github.io/assets/images/maff-workbench.png">
+    <link rel="canonical" href="https://thetailorretailored.github.io/">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="Lachlan Bridges, home">
+        <span aria-hidden="true">LB</span>
+        <span>Lachlan Bridges</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#background">Background</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow">Adelaide, South Australia</p>
+          <h1>Software for problems that need more than a tidy demo.</h1>
+          <p class="hero-intro">
+            I’m Lachlan Bridges, a software developer and applied mathematician.
+            I build dependable tools for research, data and automation—mostly in
+            Python, TypeScript and Go.
+          </p>
+          <div class="actions">
+            <a class="button primary" href="#work">Explore selected work</a>
+            <a class="button secondary" href="https://github.com/TheTailorRetailored">GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+
+        <div class="hero-graphic" aria-label="A diagram connecting research, data and systems engineering">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <span class="node node-main">Build</span>
+          <span class="node node-research">Research</span>
+          <span class="node node-data">Data</span>
+          <span class="node node-systems">Systems</span>
+          <span class="node node-maths">Maths</span>
+        </div>
+      </section>
+
+      <section class="section" id="work">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Selected work</p>
+            <h2>Tools with a reason to exist.</h2>
+          </div>
+          <p>
+            These projects grew from concrete problems: keeping mathematical work
+            inspectable, modelling a curriculum, reorganising immutable data, and
+            recovering information from a changing backup format.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <a class="project-image" href="https://github.com/TheTailorRetailored/maff" aria-label="View Maff on GitHub">
+              <img src="assets/images/maff-workbench.png" alt="Maff dashboard showing a synthetic mathematics research project" width="1267" height="720">
+            </a>
+            <div class="project-copy">
+              <div class="project-topline">
+                <span>Research infrastructure</span>
+                <span>Early alpha</span>
+              </div>
+              <h3><a href="https://github.com/TheTailorRetailored/maff">Maff <span aria-hidden="true">↗</span></a></h3>
+              <p>
+                A self-hosted workspace for mathematical research. Markdown remains
+                the source of truth while a typed claim graph, review queues, an MCP
+                interface and a Lean worker add structure around it.
+              </p>
+              <ul class="tags" aria-label="Technologies">
+                <li>TypeScript</li><li>React</li><li>PostgreSQL</li><li>MCP</li><li>Lean 4</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="feature-card feature-card-reverse">
+            <a class="project-image" href="https://github.com/TheTailorRetailored/curriculum-graph" aria-label="View Curriculum Graph on GitHub">
+              <img src="assets/images/curriculum-graph-explorer.png" alt="Curriculum Graph explorer visualising a large synthetic curriculum ontology" width="1267" height="720">
+            </a>
+            <div class="project-copy">
+              <div class="project-topline">
+                <span>Knowledge modelling</span>
+                <span>2,661 nodes</span>
+              </div>
+              <h3><a href="https://github.com/TheTailorRetailored/curriculum-graph">Curriculum Graph <span aria-hidden="true">↗</span></a></h3>
+              <p>
+                A readable YAML ontology with validation, graph analysis, an MCP
+                server and a browser explorer. It makes prerequisites, knowledge
+                points and curriculum gaps inspectable instead of burying them in a spreadsheet.
+              </p>
+              <ul class="tags" aria-label="Technologies">
+                <li>TypeScript</li><li>YAML</li><li>Knowledge graphs</li><li>MCP</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card rust">
+            <div class="project-number">01</div>
+            <p class="project-kind">Linux filesystem</p>
+            <h3><a href="https://github.com/TheTailorRetailored/VMapFS">VMapFS <span aria-hidden="true">↗</span></a></h3>
+            <p>
+              A Go/FUSE experiment for presenting alternate, persistent directory
+              layouts without moving or modifying the source data.
+            </p>
+            <ul class="tags"><li>Go</li><li>FUSE</li><li>Linux</li></ul>
+          </article>
+
+          <article class="project-card blue">
+            <div class="project-number">02</div>
+            <p class="project-kind">Data recovery</p>
+            <h3><a href="https://github.com/TheTailorRetailored/signal-backup-v2-exporter">Signal BackupV2 Exporter <span aria-hidden="true">↗</span></a></h3>
+            <p>
+              A selective HTML, Markdown and JSON exporter for Signal Android’s
+              newer folder-based encrypted backups, tested against a large personal archive.
+            </p>
+            <ul class="tags"><li>Python</li><li>Kotlin</li><li>Cryptography</li></ul>
+          </article>
+
+          <article class="project-card gold">
+            <div class="project-number">03</div>
+            <p class="project-kind">Document tooling</p>
+            <h3><a href="https://github.com/TheTailorRetailored/latex-mcp">LaTeX MCP <span aria-hidden="true">↗</span></a></h3>
+            <p>
+              A small Model Context Protocol server that compiles trusted LaTeX
+              documents, caches PDFs, and exposes reusable templates and snippets.
+            </p>
+            <ul class="tags"><li>Python</li><li>FastMCP</li><li>Docker</li></ul>
+          </article>
+
+          <article class="project-card green">
+            <div class="project-number">04</div>
+            <p class="project-kind">Applied mathematics</p>
+            <h3><a href="https://github.com/TheTailorRetailored/MPhilThesis">MPhil thesis <span aria-hidden="true">↗</span></a></h3>
+            <p>
+              Markov-modulated models for intermittent animal-search strategies,
+              bringing several foraging models into a common stochastic framework.
+            </p>
+            <div class="inline-links">
+              <a href="https://thetailorretailored.github.io/MPhilThesis/thesis.pdf">Read the thesis</a>
+              <a href="https://github.com/TheTailorRetailored/MPhilThesis">View source</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section background" id="background">
+        <div class="background-intro">
+          <p class="eyebrow">Background</p>
+          <h2>Research habits, applied to software.</h2>
+          <p>
+            I came to software through applied mathematics and university research.
+            Since then I’ve built independent and collaborative systems for quantitative
+            work, education, data recovery and self-hosted research.
+          </p>
+          <p>
+            I care about clear boundaries, reproducible behaviour and tools that remain
+            understandable after the first demo. I document status and limitations alongside
+            the working parts; knowing where a system stops is part of understanding it.
+          </p>
+        </div>
+
+        <div class="timeline" aria-label="Education and experience">
+          <div class="timeline-item">
+            <span class="timeline-date">2019–2021</span>
+            <div><h3>Graduate Research Assistant</h3><p>Research software, mathematical modelling and analysis.</p></div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-date">2017–2021</span>
+            <div><h3>University Tutor</h3><p>Mathematics and statistics teaching at the University of Adelaide.</p></div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-date">2017–2019</span>
+            <div><h3>Master of Philosophy</h3><p>Applied Mathematics, University of Adelaide.</p></div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-date">2014–2016</span>
+            <div><h3>Bachelor of Mathematical Sciences</h3><p>Applied Mathematics and Statistics, University of Adelaide.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact">
+        <p class="eyebrow">Contact</p>
+        <h2>Have an interesting problem?</h2>
+        <p>
+          I’m based in Adelaide and open to software engineering, technical support,
+          data and quantitative roles where careful problem-solving matters.
+        </p>
+        <div class="actions">
+          <a class="button light" href="mailto:lachlanjbridges@gmail.com">lachlanjbridges@gmail.com</a>
+          <a class="button outline-light" href="https://github.com/TheTailorRetailored">GitHub profile <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Lachlan Bridges <span aria-hidden="true">·</span> Adelaide, SA</p>
+      <p>Built as plain HTML and CSS. No trackers, cookies or frameworks.</p>
+    </footer>
+  </body>
+</html>
