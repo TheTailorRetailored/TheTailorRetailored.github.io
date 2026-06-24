@@ -16,34 +16,38 @@
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&amp;family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
 
-    <header class="site-header">
-      <a class="wordmark" href="#top" aria-label="Lachlan Bridges, home">
-        <span aria-hidden="true">LB</span>
-        <span>Lachlan Bridges</span>
-      </a>
-      <nav aria-label="Primary navigation">
-        <a href="#work">Work</a>
-        <a href="#background">Background</a>
-        <a href="#fit">Role fit</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="wordmark" href="#top" aria-label="Lachlan Bridges, home">
+      <span aria-hidden="true">LB</span>
+      <span>Lachlan Bridges</span>
+    </a>
+    <nav aria-label="Primary navigation">
+      <a href="#work">Work</a>
+      <a href="#background">Background</a>
+      <a href="#fit">Role fit</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
 
     <main id="main">
+
+      <!-- ─── HERO ─────────────────────────────────────────── -->
       <section class="hero" id="top">
         <div class="hero-copy">
           <p class="eyebrow">Applied mathematics · backend systems · Adelaide</p>
-          <h1>Systems that stay understandable—from mathematical research to production runtime infrastructure.</h1>
+          <h1>Systems that hold up after the first demo.</h1>
           <p class="hero-intro">
-            I turn vague technical problems into documented, tested and inspectable
-            systems—from quantitative execution runtimes to knowledge graphs and
-            self-hosted research platforms.
+            Background in applied mathematics. I build backend systems, data tooling
+            and internal infrastructure — the kind of work where getting the model
+            right matters more than the UI.
           </p>
           <dl class="hero-proof">
             <div>
@@ -56,7 +60,7 @@
             </div>
             <div>
               <dt>Evidence</dt>
-              <dd>Inspectable systems with tests, documentation, deployment guides and technical demos</dd>
+              <dd>Real systems with tests, deployment guides, documentation and honest limitations</dd>
             </div>
           </dl>
           <div class="actions">
@@ -68,7 +72,7 @@
 
         <aside class="hero-profile" aria-label="Profile summary">
           <img class="profile-photo" src="assets/images/lachlan-bridges-portrait.png" alt="Portrait of Lachlan Bridges" width="72" height="72">
-          <p>Mathematical research → systems engineering</p>
+          <p class="profile-label">Mathematical research → systems engineering</p>
           <dl>
             <div><dt>Flagship</dt><dd>Private quantitative runtime infrastructure</dd></div>
             <div><dt>Working style</dt><dd>Explicit boundaries, reproducible behaviour, honest limitations</dd></div>
@@ -78,19 +82,21 @@
         </aside>
       </section>
 
+      <!-- ─── OPPORTUNITY BANNER ────────────────────────────── -->
       <section class="opportunity" aria-labelledby="opportunity-title">
         <div>
-          <p class="eyebrow">What I’m looking for</p>
+          <p class="eyebrow">What I'm looking for</p>
           <h2 id="opportunity-title">Backend, data and internal-tools roles.</h2>
         </div>
         <p>
-          Adelaide or remote, particularly Python or TypeScript systems, data
-          validation, APIs, research software and AI-tooling infrastructure where
-          correctness matters more than surface polish.
+          Adelaide or remote — particularly Python or TypeScript systems, data
+          validation, APIs, research software and AI-tooling infrastructure.
+          Places where correctness is the actual requirement, not a nice-to-have.
         </p>
         <a class="button secondary" href="assets/Lachlan-Bridges-CV.pdf">CV in one click</a>
       </section>
 
+      <!-- ─── WORK ──────────────────────────────────────────── -->
       <section class="section" id="work">
         <div class="section-heading">
           <div>
@@ -98,19 +104,23 @@
             <h2>Systems with evidence behind them.</h2>
           </div>
           <p>
-            These are self-directed engineering projects, documented so employers can
-            inspect architecture, tests, trade-offs and limitations. Each is linked to
-            source or technical documentation; nothing here is hypothetical.
+            Self-directed engineering projects, documented so employers can inspect
+            architecture, tests, trade-offs and limitations. Everything here is
+            real and linked — nothing hypothetical.
           </p>
         </div>
 
         <div class="feature-grid">
+
+          <!-- CrackTrader -->
           <article class="feature-card flagship-card">
             <a class="cracktrader-panel" href="https://cracktrader.github.io/" aria-label="View the CrackTrader product site">
               <span class="ct-label">Private runtime infrastructure</span>
               <strong>One contract.<br>Four environments.</strong>
               <span class="ct-path">event → snapshot → intent → risk → execution → inventory</span>
-              <span class="ct-modes"><b>Backtest</b><b>Paper</b><b>Sandbox</b><b>Live</b></span>
+              <span class="ct-modes">
+                <b>Backtest</b><b>Paper</b><b>Sandbox</b><b>Live</b>
+              </span>
               <span class="ct-evidence">
                 <i><b>1,706</b> test functions</i>
                 <i><b>426</b> test files</i>
@@ -126,20 +136,27 @@
               <h3><a href="https://cracktrader.github.io/">CrackTrader <span aria-hidden="true">↗</span></a></h3>
               <p>
                 A production-grade quantitative runtime I designed and built for
-                research, simulation and execution. One strategy contract spans
-                backtest, paper, sandbox and live environments while shared state,
-                attribution, central risk, routing and venue behaviour remain explicit.
+                research, simulation and live execution. One strategy contract spans
+                backtest, paper, sandbox and live — shared state, attribution, central
+                risk, routing and venue behaviour all stay explicit across the boundary.
+              </p>
+              <p class="project-proof">
+                <strong>In engineering terms:</strong> event-driven Python, typed
+                strategy contracts, isolated venue adapters, a central risk ledger,
+                full position attribution and a feed benchmark of 642k events/second.
+                The test suite runs in CI.
               </p>
               <ul class="tags" aria-label="Technologies">
-                <li>Python</li><li>AsyncIO</li><li>CCXT</li><li>WebSockets</li><li>Event-driven systems</li>
+                <li>Python</li><li>AsyncIO</li><li>CCXT</li><li>WebSockets</li><li>Event-driven</li>
               </ul>
               <div class="inline-links">
                 <a href="https://cracktrader.github.io/">Product site</a>
-                <a href="https://cracktrader.github.io/docs/">Technical documentation</a>
+                <a href="https://cracktrader.github.io/docs/">Technical docs</a>
               </div>
             </div>
           </article>
 
+          <!-- Curriculum Graph -->
           <article class="feature-card feature-card-reverse">
             <a class="project-image" href="https://github.com/TheTailorRetailored/curriculum-graph" aria-label="View Curriculum Graph on GitHub">
               <img src="assets/images/curriculum-graph-neighbourhood.png" alt="Curriculum Graph explorer showing prerequisite relationships around unit fraction notation" width="1600" height="900">
@@ -151,15 +168,15 @@
               </div>
               <h3><a href="https://github.com/TheTailorRetailored/curriculum-graph">Curriculum Graph <span aria-hidden="true">↗</span></a></h3>
               <p>
-                A curriculum knowledge graph with more than 2,500 nodes, schema
+                A curriculum knowledge graph with more than 2,500 nodes. Schema
                 validation, search, auditable patch logs, MCP access, JSON/JSON-LD
-                exports and a local browser explorer. It demonstrates testable data
-                tooling and reviewable AI-assisted authoring.
+                exports and a local browser explorer.
               </p>
               <p class="project-proof">
-                <strong>Demonstrates:</strong> schema design, data modelling, YAML
-                validation, graph queries, deterministic exports and safe AI-assisted
-                editing with human review and auditable patch logs.
+                <strong>Demonstrates:</strong> schema design, graph queries,
+                deterministic exports, and AI-assisted editing with human review
+                and auditable patch logs — the kind of discipline that makes
+                LLM-assisted authoring trustworthy rather than just fast.
               </p>
               <ul class="tags" aria-label="Technologies">
                 <li>TypeScript</li><li>YAML</li><li>Knowledge graphs</li><li>MCP</li>
@@ -167,6 +184,7 @@
             </div>
           </article>
 
+          <!-- Maff -->
           <article class="feature-card">
             <a class="project-image" href="https://github.com/TheTailorRetailored/maff" aria-label="View Maff on GitHub">
               <img src="assets/images/maff-workbench.png" alt="Maff dashboard showing a synthetic mathematics research project" width="1267" height="720">
@@ -178,32 +196,34 @@
               </div>
               <h3><a href="https://github.com/TheTailorRetailored/maff">Maff <span aria-hidden="true">↗</span></a></h3>
               <p>
-                A TypeScript, React and PostgreSQL workspace I use for sustained
-                mathematical research. It combines notes, claim graphs, review queues,
-                MCP access and Lean integration with authenticated services, audit logs,
-                Docker deployment and documentation.
+                A TypeScript, React and PostgreSQL workspace for sustained
+                mathematical research. Notes, claim graphs, review queues, MCP
+                access and Lean integration — all in one self-hosted system I
+                actually use.
               </p>
               <p class="project-proof">
-                <strong>In workplace terms:</strong> a self-hosted internal research
-                platform with an authenticated React UI, TypeScript REST API,
-                PostgreSQL index and cache, audit logs, Docker deployment and a
-                formal-methods worker.
+                <strong>In workplace terms:</strong> authenticated React UI,
+                TypeScript REST API, PostgreSQL index and cache, audit logs,
+                Docker deployment and a formal-methods worker. Built as a real
+                internal platform, not a demo.
               </p>
               <ul class="tags" aria-label="Technologies">
                 <li>TypeScript</li><li>React</li><li>PostgreSQL</li><li>MCP</li><li>Lean 4</li>
               </ul>
             </div>
           </article>
-        </div>
 
+        </div><!-- /feature-grid -->
+
+        <!-- Smaller projects -->
         <div class="project-grid">
           <article class="project-card blue">
             <p class="project-kind">Practical Python data tooling</p>
             <h3><a href="https://github.com/TheTailorRetailored/signal-backup-v2-exporter">Signal BackupV2 Exporter <span aria-hidden="true">↗</span></a></h3>
             <p>
-              Reverse-engineered enough of Signal Android’s newer folder-based backup
-              format to selectively export conversations and media to HTML, Markdown
-              and JSON. Tests use synthetic fixtures; no personal data is published.
+              Reverse-engineered Signal Android's newer folder-based backup format
+              to selectively export conversations and media to HTML, Markdown and
+              JSON. Tests use synthetic fixtures; no personal data published.
             </p>
             <ul class="tags"><li>Python</li><li>Kotlin</li><li>Cryptography</li><li>Large archives</li></ul>
           </article>
@@ -213,8 +233,8 @@
             <h3><a href="https://github.com/TheTailorRetailored/latex-mcp">LaTeX MCP <span aria-hidden="true">↗</span></a></h3>
             <p>
               A Model Context Protocol server that turns trusted LaTeX input into
-              cached PDFs and exposes reusable templates and snippets. Packaged for
-              repeatable local deployment with Docker.
+              cached PDFs and exposes reusable templates and snippets. Packaged
+              for repeatable local deployment with Docker.
             </p>
             <ul class="tags"><li>Python</li><li>FastMCP</li><li>Docker</li></ul>
           </article>
@@ -223,39 +243,39 @@
             <p class="project-kind">Linux filesystem tooling</p>
             <h3><a href="https://github.com/TheTailorRetailored/VMapFS">VMapFS <span aria-hidden="true">↗</span></a></h3>
             <p>
-              A Go/FUSE filesystem that presents persistent alternate directory layouts
-              without moving or modifying source data. Includes immutable source access,
-              state backups, extended attributes, unit tests and Linux CI.
+              A Go/FUSE filesystem that presents persistent alternate directory
+              layouts without moving or modifying source data. Immutable source
+              access, state backups, extended attributes, unit tests and Linux CI.
             </p>
             <ul class="tags"><li>Go</li><li>FUSE</li><li>Linux</li></ul>
           </article>
         </div>
+
       </section>
 
+      <!-- ─── BACKGROUND ─────────────────────────────────────── -->
       <section class="section background" id="background">
         <div class="background-intro">
           <p class="eyebrow">Background</p>
           <h2>Mathematical research, carried into systems engineering.</h2>
           <p>
-            I came to software through applied mathematics, university research and
-            scientific modelling. That background still shapes how I build: define the
-            objects carefully, preserve provenance, make assumptions inspectable and
-            record where the model stops matching reality.
+            I came to software through maths research and university teaching, not
+            a bootcamp or conventional web-dev path. That shapes how I work — I tend
+            to think about the data model before the API, and I'd rather document
+            limitations honestly than paper over them.
           </p>
           <p>
-            Since 2022 I’ve combined independent quantitative research with substantial
-            personal and collaborative software work across trading infrastructure,
-            education, data recovery and self-hosted research systems. My engagement
-            with machine learning and statistical modelling goes back to a graduate
-            summer school in 2017 and deep-learning coursework in 2019—well before the
-            current wave of LLM tooling.
+            Since 2022 I've been building independently: a quantitative trading
+            runtime, a curriculum knowledge graph, a research workspace, filesystem
+            tooling. These are real systems I use — not portfolio pieces assembled
+            for an interview.
           </p>
           <p>
-            My route into software was through mathematical research, university
-            teaching and independent engineering rather than a conventional
-            web-development path. I am strongest where the problem is underspecified,
-            the data model matters, and correctness and documentation matter more than
-            UI polish.
+            My engagement with machine learning goes back to a graduate summer school
+            in 2017 and deep-learning coursework in 2019, well before the current
+            wave of LLM tooling. I'm most useful where the problem is underspecified,
+            the data model has real structure, and the finished system needs to stay
+            understandable.
           </p>
           <p class="background-link">
             <a href="https://thetailorretailored.github.io/MPhilThesis/thesis.pdf">Animal foraging modelling — read the MPhil research</a>
@@ -269,7 +289,7 @@
               <span class="timeline-date">2022–present <em>ongoing</em></span>
               <div>
                 <h3>Independent software development &amp; research <span class="summary-arrow" aria-hidden="true">▶</span></h3>
-                <p>Backend systems, data tooling, AI-assisted software and quantitative research. Open to view projects.</p>
+                <p>Backend systems, data tooling, AI-assisted software and quantitative research.</p>
               </div>
             </summary>
             <div class="timeline-project-grid">
@@ -290,7 +310,7 @@
               </a>
               <a class="timeline-project" href="https://github.com/TheTailorRetailored/signal-backup-v2-exporter">
                 <div><span class="project-dot purple"></span><strong>Signal BackupV2 Exporter</strong><time>2026</time></div>
-                <p>Reverse-engineered data exporter for Signal’s newer folder-based backup format.</p>
+                <p>Reverse-engineered data exporter for Signal's newer folder-based backup format.</p>
                 <ul><li>Python</li><li>Kotlin</li><li>Cryptography</li></ul>
               </a>
               <a class="timeline-project" href="https://github.com/TheTailorRetailored/latex-mcp">
@@ -305,6 +325,7 @@
               </a>
             </div>
           </details>
+
           <div class="timeline-item">
             <span class="timeline-date">2019–2021</span>
             <div><h3>Graduate Research Assistant</h3><p>Research software, mathematical modelling and quantitative analysis.</p></div>
@@ -332,6 +353,7 @@
         </div>
       </section>
 
+      <!-- ─── ROLE FIT ───────────────────────────────────────── -->
       <section class="section role-fit" id="fit">
         <div class="section-heading compact-heading">
           <div>
@@ -339,8 +361,8 @@
             <h2>Where I fit best.</h2>
           </div>
           <p>
-            I work well where requirements begin vague, the data or rules are awkward,
-            and the finished system must remain understandable after the first demo.
+            I work best where requirements start vague, the data has real structure,
+            and the system needs to stay understandable after the first demo.
           </p>
         </div>
 
@@ -361,20 +383,25 @@
 
         <div class="readiness-strip">
           <strong>Production habits</strong>
-          <span>Automated tests</span><span>Docker</span><span>CI</span><span>Structured logs</span>
-          <span>Security notes</span><span>Audit trails</span><span>Explicit limitations</span>
+          <span>Automated tests</span>
+          <span>Docker</span>
+          <span>CI</span>
+          <span>Structured logs</span>
+          <span>Security notes</span>
+          <span>Audit trails</span>
+          <span>Explicit limitations</span>
         </div>
       </section>
 
+      <!-- ─── CONTACT ───────────────────────────────────────── -->
       <section class="contact section" id="contact">
         <p class="eyebrow">Contact</p>
         <h2>Working on something complicated that needs to stay understandable?</h2>
         <p>
-          I’m based in Adelaide and open to remote roles. I’m looking for backend,
-          data engineering, research software or AI-tooling work where careful
-          problem-solving matters—especially where the domain is complex and the data
-          model has to be right. I usually reply within a day; email is the quickest
-          way to start a conversation.
+          Based in Adelaide, open to remote. I'm looking for backend, data or
+          research software roles — particularly where the domain is messy and
+          someone needs to actually understand the system they're building.
+          Email is fastest; I usually reply same day.
         </p>
         <div class="actions">
           <a class="button light" href="assets/Lachlan-Bridges-CV.pdf">Download CV</a>
@@ -382,12 +409,14 @@
           <a class="button outline-light" href="https://github.com/TheTailorRetailored">GitHub profile <span aria-hidden="true">↗</span></a>
         </div>
       </section>
+
     </main>
 
     <footer>
       <p>Lachlan Bridges <span aria-hidden="true">·</span> Adelaide, SA</p>
       <p>Built as plain HTML, CSS and a little JavaScript. No trackers, cookies or frameworks.</p>
     </footer>
+
     <script>
       (function () {
         var links = Array.from(document.querySelectorAll('nav a[href^="#"]'));

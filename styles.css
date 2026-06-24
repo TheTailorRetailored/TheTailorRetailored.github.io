@@ -46,16 +46,22 @@ img { display: block; max-width: 100%; }
   position: sticky;
   top: 0;
   z-index: 10;
+  width: 100%;
+  background: rgba(244, 240, 231, .96);
+  border-bottom: 1px solid var(--line);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.site-header-inner {
   width: min(1180px, calc(100% - 3rem));
-  margin: 0 auto;
   min-height: 84px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid var(--line);
-  background: rgba(244, 240, 231, .92);
-  backdrop-filter: blur(16px);
 }
+
 .wordmark {
   display: inline-flex;
   gap: 0.75rem;
@@ -285,7 +291,10 @@ footer { width: min(1180px, calc(100% - 3rem)); margin: 0 auto; padding: 2rem 0;
 }
 @media (max-width: 600px) {
   body { font-size: 16px; }
-  .site-header { width: min(100% - 2rem, 1180px); min-height: 72px; }
+  .site-header-inner {
+  	width: min(100% - 2rem, 1180px);
+  	min-height: 72px;
+  }
   .wordmark span:last-child { display: none; }
   nav { gap: .78rem; }
   nav a { font-size: .78rem; }
