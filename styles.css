@@ -73,7 +73,7 @@ nav { display: flex; gap: clamp(1rem, 3vw, 2.4rem); }
 nav a {
   color: var(--muted);
   font-size: 0.86rem;
-  font-weight: 650;
+  font-weight: 600;
   text-decoration: none;
 }
 nav a:hover { color: var(--ink); }
@@ -119,7 +119,7 @@ h2 { font-size: clamp(2.7rem, 5vw, 4.7rem); }
   padding: 0.78rem 1.05rem;
   border: 1px solid var(--ink);
   font-size: 0.84rem;
-  font-weight: 750;
+  font-weight: 700;
   text-decoration: none;
   transition: transform 160ms ease, background-color 160ms ease;
 }
@@ -150,8 +150,7 @@ h2 { font-size: clamp(2.7rem, 5vw, 4.7rem); }
 .compact-heading { margin-bottom: 3rem; }
 .role-grid { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
 .role-card { min-height: 280px; padding: 2rem; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-.role-index { color: var(--rust); font-family: var(--serif); font-size: 1.35rem; }
-.role-card h3 { margin: 3rem 0 .8rem; font-family: var(--serif); font-size: 1.65rem; font-weight: 500; }
+.role-card h3 { margin: .4rem 0 .8rem; font-family: var(--serif); font-size: 1.65rem; font-weight: 500; }
 .role-card p { margin: 0; color: var(--muted); font-size: .9rem; }
 .readiness-strip { display: flex; flex-wrap: wrap; gap: .7rem 1.4rem; align-items: center; margin-top: 2.5rem; color: var(--muted); font-size: .75rem; }
 .readiness-strip strong { color: var(--ink); font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; }
@@ -172,7 +171,7 @@ h2 { font-size: clamp(2.7rem, 5vw, 4.7rem); }
 .project-image img { width: 100%; height: 100%; object-fit: cover; object-position: left center; transition: transform 350ms ease; }
 .project-image:hover img { transform: scale(1.012); }
 .project-copy { display: flex; flex-direction: column; justify-content: center; padding: clamp(2rem, 5vw, 4rem); }
-.project-topline { display: flex; justify-content: space-between; gap: 1rem; margin-bottom: 2.2rem; color: var(--muted); font-size: .68rem; font-weight: 750; letter-spacing: .09em; text-transform: uppercase; }
+.project-topline { display: flex; justify-content: space-between; gap: 1rem; margin-bottom: 2.2rem; color: var(--muted); font-size: .68rem; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; }
 .project-copy h3, .project-card h3 { margin: 0 0 1rem; font-family: var(--serif); font-size: clamp(2rem, 3vw, 3rem); font-weight: 500; letter-spacing: -.025em; }
 .project-copy h3 a, .project-card h3 a { text-decoration: none; }
 .project-copy h3 a:hover, .project-card h3 a:hover { text-decoration: underline; }
@@ -200,16 +199,16 @@ h2 { font-size: clamp(2.7rem, 5vw, 4.7rem); }
 .project-card.green { --accent: var(--green); }
 .project-kind { margin: 0 0 2.2rem; color: var(--accent) !important; font-size: .7rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
 .project-card > p:not(.project-kind) { max-width: 500px; }
-.inline-links { display: flex; flex-wrap: wrap; gap: 1.4rem; margin-top: 1.6rem; font-size: .78rem; font-weight: 750; }
+.inline-links { display: flex; flex-wrap: wrap; gap: 1.4rem; margin-top: 1.6rem; font-size: .78rem; font-weight: 700; }
 
 .background { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(4rem, 9vw, 9rem); background: var(--green); color: white; }
 .background .eyebrow { color: #e5a27c; }
 .background-intro > p:not(.eyebrow) { max-width: 580px; color: #c5d2cd; }
 .background-intro h2 { margin-bottom: 2rem; }
-.background-link { margin-top: 2rem; color: white !important; font-size: .82rem; font-weight: 750; }
+.background-link { margin-top: 2rem; color: white !important; font-size: .82rem; font-weight: 700; }
 .timeline { border-top: 1px solid rgba(255,255,255,.25); }
 .timeline-item { display: grid; grid-template-columns: 115px 1fr; gap: 1.2rem; padding: 1.5rem 0; border-bottom: 1px solid rgba(255,255,255,.25); }
-.timeline-date { color: #9db2aa; font-size: .72rem; font-weight: 750; letter-spacing: .06em; }
+.timeline-date { color: #9db2aa; font-size: .72rem; font-weight: 700; letter-spacing: .06em; }
 .timeline h3 { margin: 0 0 .25rem; font-size: 1rem; }
 .timeline p { margin: 0; color: #bdccc6; font-size: .88rem; }
 .highlight-item { padding-inline: 1rem; background: rgba(255,255,255,.055); }
