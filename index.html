@@ -45,6 +45,20 @@
             systems—from quantitative execution runtimes to knowledge graphs and
             self-hosted research platforms.
           </p>
+          <dl class="hero-proof">
+            <div>
+              <dt>Best fit</dt>
+              <dd>Backend and data roles, research software, internal tools and AI tooling</dd>
+            </div>
+            <div>
+              <dt>Core stack</dt>
+              <dd>Python · TypeScript · PostgreSQL · Docker · REST · MCP · GitHub Actions</dd>
+            </div>
+            <div>
+              <dt>Evidence</dt>
+              <dd>Inspectable systems with tests, documentation, deployment guides and technical demos</dd>
+            </div>
+          </dl>
           <div class="actions">
             <a class="button primary" href="assets/Lachlan-Bridges-CV.pdf">Download CV</a>
             <a class="button secondary" href="mailto:lachlanjbridges@gmail.com">Email me</a>
@@ -64,6 +78,19 @@
         </aside>
       </section>
 
+      <section class="opportunity" aria-labelledby="opportunity-title">
+        <div>
+          <p class="eyebrow">What I’m looking for</p>
+          <h2 id="opportunity-title">Backend, data and internal-tools roles.</h2>
+        </div>
+        <p>
+          Adelaide or remote, particularly Python or TypeScript systems, data
+          validation, APIs, research software and AI-tooling infrastructure where
+          correctness matters more than surface polish.
+        </p>
+        <a class="button secondary" href="assets/Lachlan-Bridges-CV.pdf">CV in one click</a>
+      </section>
+
       <section class="section" id="work">
         <div class="section-heading">
           <div>
@@ -71,9 +98,9 @@
             <h2>Systems with evidence behind them.</h2>
           </div>
           <p>
-            The projects below span production runtime infrastructure, knowledge
-            modelling, mathematical research and specialised data recovery. Their
-            status and evidence are stated plainly.
+            These are self-directed engineering projects, documented so employers can
+            inspect architecture, tests, trade-offs and limitations. Each is linked to
+            source or technical documentation; nothing here is hypothetical.
           </p>
         </div>
 
@@ -129,6 +156,11 @@
                 exports and a local browser explorer. It demonstrates testable data
                 tooling and reviewable AI-assisted authoring.
               </p>
+              <p class="project-proof">
+                <strong>Demonstrates:</strong> schema design, data modelling, YAML
+                validation, graph queries, deterministic exports and safe AI-assisted
+                editing with human review and auditable patch logs.
+              </p>
               <ul class="tags" aria-label="Technologies">
                 <li>TypeScript</li><li>YAML</li><li>Knowledge graphs</li><li>MCP</li>
               </ul>
@@ -150,6 +182,12 @@
                 mathematical research. It combines notes, claim graphs, review queues,
                 MCP access and Lean integration with authenticated services, audit logs,
                 Docker deployment and documentation.
+              </p>
+              <p class="project-proof">
+                <strong>In workplace terms:</strong> a self-hosted internal research
+                platform with an authenticated React UI, TypeScript REST API,
+                PostgreSQL index and cache, audit logs, Docker deployment and a
+                formal-methods worker.
               </p>
               <ul class="tags" aria-label="Technologies">
                 <li>TypeScript</li><li>React</li><li>PostgreSQL</li><li>MCP</li><li>Lean 4</li>
@@ -212,6 +250,13 @@
             summer school in 2017 and deep-learning coursework in 2019—well before the
             current wave of LLM tooling.
           </p>
+          <p>
+            My route into software was through mathematical research, university
+            teaching and independent engineering rather than a conventional
+            web-development path. I am strongest where the problem is underspecified,
+            the data model matters, and correctness and documentation matter more than
+            UI polish.
+          </p>
           <p class="background-link">
             <a href="https://thetailorretailored.github.io/MPhilThesis/thesis.pdf">Animal foraging modelling — read the MPhil research</a>
             <span aria-hidden="true">↗</span>
@@ -219,6 +264,47 @@
         </div>
 
         <div class="timeline" aria-label="Education and experience">
+          <details class="timeline-present">
+            <summary class="timeline-item timeline-summary">
+              <span class="timeline-date">2022–present <em>ongoing</em></span>
+              <div>
+                <h3>Independent software development &amp; research <span class="summary-arrow" aria-hidden="true">▶</span></h3>
+                <p>Backend systems, data tooling, AI-assisted software and quantitative research. Open to view projects.</p>
+              </div>
+            </summary>
+            <div class="timeline-project-grid">
+              <a class="timeline-project" href="https://cracktrader.github.io/">
+                <div><span class="project-dot teal"></span><strong>CrackTrader</strong><time>2022–present</time></div>
+                <p>Quantitative runtime with stable strategy contracts across backtest, paper, sandbox and live execution.</p>
+                <ul><li>Python</li><li>AsyncIO</li><li>Event-driven</li></ul>
+              </a>
+              <a class="timeline-project" href="https://github.com/TheTailorRetailored/maff">
+                <div><span class="project-dot blue-dot"></span><strong>Maff</strong><time>2026–present</time></div>
+                <p>Full-stack research workspace supporting two paper-scale mathematical projects.</p>
+                <ul><li>TypeScript</li><li>React</li><li>PostgreSQL</li><li>Lean 4</li></ul>
+              </a>
+              <a class="timeline-project" href="https://github.com/TheTailorRetailored/curriculum-graph">
+                <div><span class="project-dot amber"></span><strong>Curriculum Graph</strong><time>2026–present</time></div>
+                <p>Knowledge graph with 2,500+ nodes, schema validation, MCP access and auditable authoring.</p>
+                <ul><li>TypeScript</li><li>YAML</li><li>MCP</li></ul>
+              </a>
+              <a class="timeline-project" href="https://github.com/TheTailorRetailored/signal-backup-v2-exporter">
+                <div><span class="project-dot purple"></span><strong>Signal BackupV2 Exporter</strong><time>2026</time></div>
+                <p>Reverse-engineered data exporter for Signal’s newer folder-based backup format.</p>
+                <ul><li>Python</li><li>Kotlin</li><li>Cryptography</li></ul>
+              </a>
+              <a class="timeline-project" href="https://github.com/TheTailorRetailored/latex-mcp">
+                <div><span class="project-dot coral"></span><strong>LaTeX MCP</strong><time>2025</time></div>
+                <p>MCP server turning trusted LaTeX into cached PDFs with reusable templates.</p>
+                <ul><li>Python</li><li>FastMCP</li><li>Docker</li></ul>
+              </a>
+              <a class="timeline-project" href="https://github.com/TheTailorRetailored/VMapFS">
+                <div><span class="project-dot green-dot"></span><strong>VMapFS</strong><time>2025–present</time></div>
+                <p>Go/FUSE filesystem for persistent alternate layouts without altering source data.</p>
+                <ul><li>Go</li><li>FUSE</li><li>Linux</li></ul>
+              </a>
+            </div>
+          </details>
           <div class="timeline-item">
             <span class="timeline-date">2019–2021</span>
             <div><h3>Graduate Research Assistant</h3><p>Research software, mathematical modelling and quantitative analysis.</p></div>
@@ -250,7 +336,7 @@
         <div class="section-heading compact-heading">
           <div>
             <p class="eyebrow">Where I am most useful</p>
-            <h2>Systems where correctness, domain knowledge and operational clarity matter together.</h2>
+            <h2>Where I fit best.</h2>
           </div>
           <p>
             I work well where requirements begin vague, the data or rules are awkward,
@@ -284,9 +370,11 @@
         <p class="eyebrow">Contact</p>
         <h2>Working on something complicated that needs to stay understandable?</h2>
         <p>
-          I’m based in Adelaide and interested in backend, data/platform engineering,
-          research software and technical AI-tooling roles where careful modelling and
-          reliable implementation matter.
+          I’m based in Adelaide and open to remote roles. I’m looking for backend,
+          data engineering, research software or AI-tooling work where careful
+          problem-solving matters—especially where the domain is complex and the data
+          model has to be right. I usually reply within a day; email is the quickest
+          way to start a conversation.
         </p>
         <div class="actions">
           <a class="button light" href="assets/Lachlan-Bridges-CV.pdf">Download CV</a>
@@ -298,7 +386,39 @@
 
     <footer>
       <p>Lachlan Bridges <span aria-hidden="true">·</span> Adelaide, SA</p>
-      <p>Built as plain HTML and CSS. No trackers, cookies or frameworks.</p>
+      <p>Built as plain HTML, CSS and a little JavaScript. No trackers, cookies or frameworks.</p>
     </footer>
+    <script>
+      (function () {
+        var links = Array.from(document.querySelectorAll('nav a[href^="#"]'));
+        var sections = links
+          .map(function (link) { return document.querySelector(link.getAttribute('href')); })
+          .filter(Boolean);
+        var ticking = false;
+
+        function updateNavigation() {
+          var marker = window.scrollY + 120;
+          var current = '';
+          sections.forEach(function (section) {
+            if (section.offsetTop <= marker) current = section.id;
+          });
+          links.forEach(function (link) {
+            var active = link.getAttribute('href') === '#' + current;
+            link.classList.toggle('nav-active', active);
+            if (active) link.setAttribute('aria-current', 'location');
+            else link.removeAttribute('aria-current');
+          });
+          ticking = false;
+        }
+
+        window.addEventListener('scroll', function () {
+          if (!ticking) {
+            window.requestAnimationFrame(updateNavigation);
+            ticking = true;
+          }
+        }, { passive: true });
+        updateNavigation();
+      }());
+    </script>
   </body>
 </html>
