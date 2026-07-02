@@ -1,4 +1,4 @@
-# lachlanbridges.com
+# cv.lachlanbridges.com
 
 The source for my portfolio: selected software projects, applied mathematics
 background and contact details.
